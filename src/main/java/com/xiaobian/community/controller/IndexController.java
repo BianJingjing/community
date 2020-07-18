@@ -1,5 +1,6 @@
 package com.xiaobian.community.controller;
 
+import com.xiaobian.community.dto.PaginationDTO;
 import com.xiaobian.community.dto.QuestionDTO;
 import com.xiaobian.community.mapper.QuestionMapper;
 import com.xiaobian.community.mapper.UserMapper;
@@ -27,7 +28,10 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(HttpServletRequest httpServletRequest,
-                        Model model){
+                        Model model,
+                        @RequestParam(name = "page",defaultValue = "1") Integer page,
+                        @RequestParam(name = "size",defaultValue = "5") Integer size
+                        ){
         //检验登录状态
         Cookie[] cookies = httpServletRequest.getCookies();
         if (cookies != null && cookies.length !=0){
@@ -42,8 +46,8 @@ public class IndexController {
                 }
             }
         }
-        List<QuestionDTO> questionList = questionService.list();
-        model.addAttribute("questions",questionList);
+        PaginationDTO pagination = questionService.list(page, size);
+        model.addAttribute("pagination",pagination);
         return "index";
     }
 }
