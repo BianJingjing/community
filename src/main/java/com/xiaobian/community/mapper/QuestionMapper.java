@@ -1,5 +1,6 @@
 package com.xiaobian.community.mapper;
 
+import com.xiaobian.community.dto.QuestionDTO;
 import com.xiaobian.community.model.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
@@ -10,6 +11,10 @@ import java.util.List;
 
 @Mapper
 public interface QuestionMapper {
+
+    @Select("select * from question where id = #{id} ")
+    Question getById(@Param(value = "id") Integer id);
+
     @Insert("insert into question (TITLE,DESCRIPTION,GMT_CREATE,GMT_MODIFIED,CREATOR,TAG) values (#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag})")
     void create(Question question);
 
@@ -24,4 +29,5 @@ public interface QuestionMapper {
 
     @Select("select count(1) from question where creator = #{userId} ")
     Integer countByUserId(@Param(value = "userId") Integer userId);
+
 }
