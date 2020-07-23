@@ -25,10 +25,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a64adab7-2eca-4d3c-8d22-1a36b488804f" name="Default Changelist" comment="回复功能-页面提交回复">
+    <list default="true" id="a64adab7-2eca-4d3c-8d22-1a36b488804f" name="Default Changelist" comment="回复功能-不刷新页面登录">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/dto/CommentCreateDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/community.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/community.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/dto/CommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/dto/CommentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/community.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/community.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/dto/CommentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/dto/CommentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/community.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/community.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/question.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +122,7 @@
       <recent name="com.xiaobian.community.mapper" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.xiaobian.community.dto" />
       <recent name="com.xiaobian.community.interceptor" />
     </key>
   </component>
@@ -163,7 +175,7 @@
       <workItem from="1594996410711" duration="7000" />
       <workItem from="1594996470208" duration="2195000" />
       <workItem from="1594998777090" duration="61453000" />
-      <workItem from="1595169608440" duration="99973000" />
+      <workItem from="1595169608440" duration="110651000" />
     </task>
     <task id="LOCAL-00001" summary="配置文件">
       <created>1593843435046</created>
@@ -256,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595468571911</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="回复功能-不刷新页面登录">
+      <created>1595471961505</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1595471961505</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +341,8 @@
     <MESSAGE value="实现回复功能" />
     <MESSAGE value="为回复功能添加事务" />
     <MESSAGE value="回复功能-页面提交回复" />
-    <option name="LAST_COMMIT_MESSAGE" value="回复功能-页面提交回复" />
+    <MESSAGE value="回复功能-不刷新页面登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="回复功能-不刷新页面登录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="305" y="78" key="#Inspections" timestamp="1595341786122">
@@ -341,10 +361,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="362" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1595395975672" />
+    <state x="458" y="90" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595475177062">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="458" y="90" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1595475177062" />
     <state x="533" y="245" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1595408704892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="533" y="245" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824" timestamp="1595408704892" />
+    <state x="9" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595475521028">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="9" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1595475521028" />
     <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1595301443480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -369,38 +397,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="366" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595324445856" />
-    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1595469265241">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595469265241" />
-    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1595469265241">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595469265241" />
-    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1595469265241">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595469265241" />
-    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1595469265241">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595469265241" />
-    <state width="1493" height="162" key="GridCell.Tab.1.bottom" timestamp="1595469265242">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595469265242" />
-    <state width="1493" height="162" key="GridCell.Tab.1.center" timestamp="1595469265242">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595469265242" />
-    <state width="1493" height="162" key="GridCell.Tab.1.left" timestamp="1595469265242">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595469265242" />
-    <state width="1493" height="162" key="GridCell.Tab.1.right" timestamp="1595469265242">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1595490869564">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595469265242" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595490869564" />
     <state width="1493" height="45" key="GridCell.Tab.2.bottom" timestamp="1595426579445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -433,10 +461,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1595337272067" />
-    <state width="498" height="540" key="SwitcherDM" timestamp="1595428210254">
+    <state width="498" height="540" key="SwitcherDM" timestamp="1595489293778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="540" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1595428210254" />
+    <state width="498" height="540" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1595489293778" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593846779173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -497,9 +525,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="435" y="256" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1595324484668" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595470030912">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595490144422">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595470030912" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595490144422" />
   </component>
 </project>
