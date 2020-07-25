@@ -1,9 +1,8 @@
 package com.xiaobian.community.controller;
 
 import com.xiaobian.community.dto.CommentDTO;
-import com.xiaobian.community.dto.CommentCreateDTO;
-import com.xiaobian.community.dto.CommentDTO;
 import com.xiaobian.community.dto.QuestionDTO;
+import com.xiaobian.community.enums.CommentTypeEnum;
 import com.xiaobian.community.service.CommentService;
 import com.xiaobian.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,7 @@ public class QuestionController {
     public String question(@PathVariable(value = "id") Long id,
                            Model model){
         QuestionDTO questionDTO = questionService.getById(id);
-        List<CommentDTO> comments = commentService.listByQuestionId(id);
+        List<CommentDTO> comments = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
         questionService.incView(id);
         model.addAttribute("question",questionDTO);
         model.addAttribute("comments",comments);
