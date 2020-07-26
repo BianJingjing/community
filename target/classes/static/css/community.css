@@ -27,13 +27,33 @@ body {
 .question-title{
     margin-top: 25px;
 }
+.question-tag{
+    margin-right: 5px;
+}
+.question-wechat{
+    width: 100%;
+}
+.question-related{
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+}
 .community-menu{
     display: block;
     color: #999;
     font-size: 13px;
     margin-bottom: 15px;
 }
-
+.publish-tab-tag{
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.publish-tab-tag .label-info{
+    margin-right: 10px;
+}
 .jumbotron {
     margin: 60px;
 }
