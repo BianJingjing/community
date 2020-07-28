@@ -41,7 +41,7 @@ body {
     padding-left: 0;
 }
 .community-menu{
-    display: block;
+    /*display: block;*/
     color: #999;
     font-size: 13px;
     margin-bottom: 15px;
@@ -52,7 +52,9 @@ body {
     padding-top: 10px;
 }
 .publish-tab-tag .label-info{
-    margin-right: 10px;
+    white-space: normal;
+    display: inline-block;
+    margin: 5px 10px;
 }
 .jumbotron {
     margin: 60px;

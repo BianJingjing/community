@@ -3,6 +3,7 @@ package com.xiaobian.community.interceptor;
 import com.xiaobian.community.mapper.UserMapper;
 import com.xiaobian.community.model.User;
 import com.xiaobian.community.model.UserExample;
+import com.xiaobian.community.service.NotificationServier;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -19,6 +20,9 @@ public class SessionInterceptor implements HandlerInterceptor {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private NotificationServier notificationServier;
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //检验登录状态
@@ -33,6 +37,9 @@ public class SessionInterceptor implements HandlerInterceptor {
 
                     if(users.size() != 0){
                         request.getSession().setAttribute("user",users.get(0));
+                        Long unreadCount = notificationServier.unreadCount(users.get(0).getId());
+                        request.getSession().setAttribute("unreadCount", unreadCount);
+
                     }
                     break;
                 }

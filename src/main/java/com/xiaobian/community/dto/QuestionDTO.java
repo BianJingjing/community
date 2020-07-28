@@ -4,7 +4,8 @@ import com.xiaobian.community.model.User;
 import lombok.Data;
 
 @Data
-public class QuestionDTO {
+public class
+QuestionDTO {
     private Long id;
     private String title;
     private String description;
