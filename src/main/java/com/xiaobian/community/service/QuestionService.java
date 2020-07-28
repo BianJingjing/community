@@ -34,7 +34,15 @@ public class QuestionService {
     private UserMapper userMapper;
 
     //未登录 展示question
-    public PaginationDTO list(Integer page, Integer size) {
+    public PaginationDTO list(String search, Integer page, Integer size) {
+
+        if (StringUtils.isNotBlank(search)){
+            String[] tags = StringUtils.split(search, " ");
+            search = Arrays.stream(tags).collect(Collectors.joining("|"));
+        }
+
+
+
         PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalPage;
 
