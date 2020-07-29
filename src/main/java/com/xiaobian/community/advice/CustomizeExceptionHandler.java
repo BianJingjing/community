@@ -44,6 +44,7 @@ public class CustomizeExceptionHandler {
                 writer.close();
             } catch (IOException ioException) {
 
+
             }
             return null;
         }else {
