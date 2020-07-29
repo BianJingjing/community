@@ -25,59 +25,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a64adab7-2eca-4d3c-8d22-1a36b488804f" name="Default Changelist" comment="修复通知功能和增加富文本编辑功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/dto/FileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/provider/UCloudProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/default-avatar.png" afterDir="false" />
+    <list default="true" id="a64adab7-2eca-4d3c-8d22-1a36b488804f" name="Default Changelist" comment="图片上传功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/dto/QuestionQueryDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/community.iml" beforeDir="false" afterPath="$PROJECT_DIR$/community.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/exception/CustomizeErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/exception/CustomizeErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/mapper/QuestionExtMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/mapper/QuestionExtMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaobian/community/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/code-block-dialog/code-block-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/code-block-dialog/code-block-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/emoji-dialog/emoji-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/emoji-dialog/emoji-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/emoji-dialog/emoji.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/emoji-dialog/emoji.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/goto-line-dialog/goto-line-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/goto-line-dialog/goto-line-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/help-dialog/help-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/help-dialog/help-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/help-dialog/help.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/help-dialog/help.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/html-entities-dialog/html-entities-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/html-entities-dialog/html-entities-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/html-entities-dialog/html-entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/html-entities-dialog/html-entities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/image-dialog/image-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/image-dialog/image-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/link-dialog/link-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/link-dialog/link-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/plugin-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/plugin-template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/preformatted-text-dialog/preformatted-text-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/preformatted-text-dialog/preformatted-text-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/reference-link-dialog/reference-link-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/reference-link-dialog/reference-link-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/table-dialog/table-dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/table-dialog/table-dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/plugins/test-plugin/test-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/test-plugin/test-plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/QuestionExtMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/QuestionExtMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/navigation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/exception/CustomizeErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/exception/CustomizeErrorCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/mapper/QuestionExtMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/mapper/QuestionExtMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiaobian/community/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaobian/community/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/code-block-dialog/code-block-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/emoji-dialog/emoji-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/emoji-dialog/emoji.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/goto-line-dialog/goto-line-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/help-dialog/help-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/help-dialog/help.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/html-entities-dialog/html-entities-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/html-entities-dialog/html-entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/image-dialog/image-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/link-dialog/link-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/plugin-template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/preformatted-text-dialog/preformatted-text-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/reference-link-dialog/reference-link-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/table-dialog/table-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/plugins/test-plugin/test-plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/QuestionExtMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/QuestionExtMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/navigation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +183,7 @@
       <workItem from="1594998777090" duration="61453000" />
       <workItem from="1595169608440" duration="182273000" />
       <workItem from="1595749114625" duration="7392000" />
-      <workItem from="1595774767953" duration="45387000" />
+      <workItem from="1595774767953" duration="48786000" />
     </task>
     <task id="LOCAL-00001" summary="配置文件">
       <created>1593843435046</created>
@@ -356,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595905270188</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="图片上传功能">
+      <created>1595950952296</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1595950952296</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +398,8 @@
     <MESSAGE value="提问页面相关问题展示" />
     <MESSAGE value="规范提问的标签库" />
     <MESSAGE value="修复通知功能和增加富文本编辑功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复通知功能和增加富文本编辑功能" />
+    <MESSAGE value="图片上传功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片上传功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="305" y="78" key="#Inspections" timestamp="1595341786122">
@@ -452,6 +422,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="191" y="96" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1595777589019" />
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595952319065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1595952319065" />
     <state x="533" y="245" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1595408704892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -484,54 +458,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="899" y="159" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595495328381" />
-    <state width="1493" height="18" key="GridCell.Tab.0.bottom" timestamp="1595945427499">
+    <state width="1493" height="301" key="GridCell.Tab.0.bottom" timestamp="1595990279098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595945427499" />
-    <state width="1493" height="18" key="GridCell.Tab.0.center" timestamp="1595945427499">
+    <state width="1493" height="301" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595990279098" />
+    <state width="1493" height="301" key="GridCell.Tab.0.center" timestamp="1595990279098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595945427499" />
-    <state width="1493" height="18" key="GridCell.Tab.0.left" timestamp="1595945427499">
+    <state width="1493" height="301" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595990279098" />
+    <state width="1493" height="301" key="GridCell.Tab.0.left" timestamp="1595990279098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595945427499" />
-    <state width="1493" height="18" key="GridCell.Tab.0.right" timestamp="1595945427499">
+    <state width="1493" height="301" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595990279098" />
+    <state width="1493" height="301" key="GridCell.Tab.0.right" timestamp="1595990279098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595945427499" />
-    <state width="1493" height="18" key="GridCell.Tab.1.bottom" timestamp="1595945427501">
+    <state width="1493" height="301" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595990279098" />
+    <state width="1493" height="301" key="GridCell.Tab.1.bottom" timestamp="1595990279099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595945427501" />
-    <state width="1493" height="18" key="GridCell.Tab.1.center" timestamp="1595945427501">
+    <state width="1493" height="301" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595990279099" />
+    <state width="1493" height="301" key="GridCell.Tab.1.center" timestamp="1595990279099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595945427501" />
-    <state width="1493" height="18" key="GridCell.Tab.1.left" timestamp="1595945427499">
+    <state width="1493" height="301" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595990279099" />
+    <state width="1493" height="301" key="GridCell.Tab.1.left" timestamp="1595990279098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595945427499" />
-    <state width="1493" height="18" key="GridCell.Tab.1.right" timestamp="1595945427501">
+    <state width="1493" height="301" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595990279098" />
+    <state width="1493" height="301" key="GridCell.Tab.1.right" timestamp="1595990279099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="18" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595945427501" />
-    <state width="1493" height="284" key="GridCell.Tab.2.bottom" timestamp="1595842152857">
+    <state width="1493" height="301" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595990279099" />
+    <state width="1493" height="284" key="GridCell.Tab.2.bottom" timestamp="1595952556810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="284" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595842152857" />
-    <state width="1493" height="284" key="GridCell.Tab.2.center" timestamp="1595842152856">
+    <state width="1493" height="284" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595952556810" />
+    <state width="1493" height="284" key="GridCell.Tab.2.center" timestamp="1595952556810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="284" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1595842152856" />
-    <state width="1493" height="284" key="GridCell.Tab.2.left" timestamp="1595842152856">
+    <state width="1493" height="284" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1595952556810" />
+    <state width="1493" height="284" key="GridCell.Tab.2.left" timestamp="1595952556810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="284" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1595842152856" />
-    <state width="1493" height="284" key="GridCell.Tab.2.right" timestamp="1595842152856">
+    <state width="1493" height="284" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1595952556810" />
+    <state width="1493" height="284" key="GridCell.Tab.2.right" timestamp="1595952556810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="284" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1595842152856" />
+    <state width="1493" height="284" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1595952556810" />
     <state width="238" height="477" key="HiddenNamespacesPopup" timestamp="1595609354482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -608,10 +582,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1593788013268" />
-    <state x="313" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595756819179">
+    <state x="313" y="141" width="909" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595952382233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="313" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1595756819179" />
+    <state x="313" y="141" width="909" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1595952382233" />
     <state x="327" y="135" key="extract.method.dialog" timestamp="1595775851613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -632,24 +606,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="435" y="256" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1595324484668" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595950424020">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595952809220">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595950424020" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595952809220" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/ProfileController.java</url>
           <line>41</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xiaobian/community/controller/ProfileController.java</url>
           <line>46</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang">
+            <option name="NOTIFY_CAUGHT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -2,6 +2,7 @@ package com.xiaobian.community.service;
 
 import com.xiaobian.community.dto.PaginationDTO;
 import com.xiaobian.community.dto.QuestionDTO;
+import com.xiaobian.community.dto.QuestionQueryDTO;
 import com.xiaobian.community.exception.CustomizeErrorCode;
 import com.xiaobian.community.exception.CustomizeException;
 import com.xiaobian.community.mapper.QuestionExtMapper;
@@ -46,7 +47,9 @@ public class QuestionService {
         PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalPage;
 
-        Integer totalCount = (int) questionMapper.countByExample(new QuestionExample());
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+        Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
 
         if (totalCount % size ==0){
             totalPage = totalCount / size;
@@ -65,12 +68,13 @@ public class QuestionService {
 
         Integer offset = size * (page - 1);
 
-
         QuestionExample questionExample = new QuestionExample();
 
         questionExample.setOrderByClause("gmt_create desc");
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setPage(offset);
 
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(questionExample, new RowBounds(offset,size));
+        List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
 
         List<QuestionDTO> questionDTOList = new ArrayList<>();
 
